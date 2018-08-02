@@ -1,0 +1,504 @@
+﻿@font-face{
+    font-family:helveticaThin;
+    src:url(../fonts/HelveticaNeue-Thin.otf);
+}
+
+
+html,body {
+
+   //background-color: rgb(240,239,236);
+   background-color: #fff;
+   font-family: helveticaThin;
+   overflow-x: hidden;
+   transition: all 0.5s ease-in
+   width:100%;
+   margin:0;
+   
+
+}
+
+
+.light-red {
+
+   //background-color: rgb(240,239,236);
+   background-color: #fff;
+}
+
+.dark-grey {
+
+  background-color: rgb(46,44,46);
+  color: white;
+
+}
+
+.light-grey {
+
+  background-color: rgb(158,176,183);
+
+}
+
+.red {
+  background-color: rgb(182,47,44);
+  color: rgb(240,239,236);
+}
+.red h1,h2,h3,h4{
+   color:#fff;
+}
+
+
+#header {
+  background-color:  rgb(182,47,44);
+  color:#fff;
+}
+
+#header a {
+  color: #fff;
+
+}
+
+.socialh {
+  margin-top: 0
+  height: 0 auto;
+  padding: 0px;
+}
+
+.socialh ul li {
+
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+  padding: 5px;
+  padding-left: 10px;
+
+}
+
+.phone {
+  margin-top: 10px;
+  float: right;
+}
+
+
+
+
+
+#first-sec {
+   
+	width: 100vw;
+}
+
+nav {
+	height:16vh;
+    width: 100vw;
+
+
+
+}
+
+
+
+.navbar {
+  margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+ .navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgb(240,239,236);
+}
+
+
+
+.navbar-inverse {
+   // background-color:  rgb(240,239,236);
+     background-color:  #fff;
+    border-color:#fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: rgb(182,47,44);
+    background-color: transparent;
+    font-weight: bold;
+
+}
+
+.navbar-inverse .navbar-nav {
+
+    background-color:#fff;
+
+    padding-right:100px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color:rgb(46,44,46);
+    font-size: 1em;
+    float: clear;
+    padding-top: 0.5em;
+     margin-top: 40px;
+
+}
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 10px 10px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+   margin-top: 15px;
+   font-family: Bradley Hand ITC;
+   font-weight: bold;
+}
+
+.navbar-brand span {
+  font-size: 35px;
+}
+
+.navbar-brand p {
+  font-size:25px;
+  margin:10px
+}
+
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus{
+    color:rgb(182,47,44);
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+   color:rgb(46,44,46);
+}
+
+.icon-bar:hover{
+
+    background-color:rgb(240,239,236);
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color:rgb(46,44,46);
+}
+
+
+
+
+.jumbotron {
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+  overflow-y:hidden
+}
+
+.jumbotron img {
+  width: 100vw;
+   height: 100%;
+   position: relative;
+   top:-200px;
+}
+
+ .page-title {
+    position: absolute;
+    top:35%;
+    left:20%;
+    font-size: 4em;
+    color: rgb(240,239,236);
+    border: 1px solid rgb(240,239,236);
+    padding: 0.5em;
+    background-color: rgba(46,44,46,0.4);
+     }
+
+
+
+
+/* IMAGE SLIDER */
+.cycle-slideshow {
+	height: 84vh;
+	width:100%;
+}
+
+.cycle-slideshow img {
+
+    border-radius: 6px;
+    opacity: 0;
+
+}
+
+.cycle-slideshow button {
+    position: absolute;
+    top: 70%;
+    z-index:1000;
+    left:20%;
+    color: rgb(240,239,236);
+    font-size: 2.5em;
+    background-color: rgba(46,44,46,0.6);
+
+}
+
+.cycle-slideshow button:hover , .cycle-slideshow button:focus{
+    background-color: rgba(46,44,46,0.4);
+     color: rgb(240,239,236);
+    border-color:rgba(46,44,46,0.3);
+}
+
+.cycle-prev, .cycle-next {
+    font-size: 250%;
+    color:rgb(46,44,46);
+    display: block;
+    position:absolute;
+    top:50%;
+    z-index:1000;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: rgba(250,250,250,0.2);
+    cursor:pointer;
+}
+
+.cycle-prev:hover, .cycle-next:hover{
+    background-color: rgb(250,250,250); 
+    transition: all 0.3s ease-in;
+}
+
+.cycle-prev {
+    left:10%;
+}
+ .cycle-next {
+     right:10%;
+ }
+
+ .cycle-pager {
+     width:100%;
+     text-align: center;
+     z-index:1000;
+     position: absolute;
+     top:20px;
+     cursor:pointer;
+ }
+
+ .cycle-pager span {
+     width:10px;
+     height:10px;
+     display: inline-block;
+     border: 1px solid rgb(182,47,44);
+     border-radius:50%;
+     margin: 0 10px;
+     color:  none;
+     white-space: nowrap;
+     text-indent:100%;
+ }
+
+ .cycle-pager .cycle-pager-active {
+     background-color: rgb(182,47,44);
+ }
+
+ /* SLIDER ENDS */
+
+ .othersections{
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+ }
+
+ .section-heading {
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+
+ }
+
+ .icon {
+
+    text-align: left;
+    padding-top: 2px;
+ }
+
+.icon i {
+    font-size: 5em;
+
+}
+
+/* ---About us ---- */
+.member-parent {
+
+  overflow-y: hidden;
+  margin-bottom: 15px;
+}
+.twitter_feed{
+  height: 500px;
+  overflow-x: hidden;
+  margin: 15px;
+}
+.facebook_feed{
+  margin: 15px;
+}
+.member {
+  /*border: 1px solid #000;*/
+  height:350px;
+  margin-bottom: 15px;
+
+}
+
+
+
+
+/*Patrick Css start-------------------------------------------*/
+/*-------------------------------------homepage css------------------*/
+
+.patners h3{
+	text-align: center;
+}
+.list_patner_images{
+	list-style: none;
+}
+
+.patner_image1{
+	padding-top: 5px;
+	margin-left: 50px;
+	width:150px;
+	height: 120px;
+	float: left;
+}
+.patner_image2{
+	padding-top: 5px;
+	margin-left: 50px;
+	width:250px;
+	height: 120px;
+	float: left;
+}
+.patner_image3{
+	padding-top: 5px;
+	margin-left: 50px;
+	width:250px;
+	height: 120px;
+	float: left;
+}
+
+#footer_area{
+	width:100%;
+	height:0 auto;
+	background-color: #2e2c2e;
+}
+.footer h3 {
+	color: #ffffff;
+}
+.footer p{
+	color: #64676a;
+}
+.Navigation_footer a{
+	color: #64676a;
+}
+.what_we_do_footer a{
+	color: #64676a;
+}
+.email_footer{
+	width: 170px;
+	height: 40px;
+	float: left;
+  padding: 10px;
+	border-radius: 3px;
+	border: none;
+	background-color: #252627;
+	color: #7f8080;
+}
+.btn-subscribe{
+	width: 80px;
+	height: 40px;
+	float: left;
+	background-color: #b62f2c;
+	color: #ffffff;
+	border: none;
+	border-radius: 3px;
+}
+
+
+.copyright_area{
+	color: #64676a;
+	text-align: center;
+	margin-top: 50px;
+}
+.copyright_area a{
+	color: red;
+	font-weight: bold;
+}
+/*--------------------------Locate us css------------------------------------*/
+.header_image{
+	background-color: #cccccc;
+	background-image: url(../images/locate_us.jpg);
+	height: 250px;
+}
+.btn-submit:hover, .btn-submit:focus{
+    background:rgb(240,239,236);
+	border-color: inherit;
+}
+.header_image h1{
+	font-size: 50px;
+	font-weight: bolder;
+	margin-top: 175px;
+}
+.form_area{
+	border-bottom: 2px solid #cccccc;
+}
+.join_us{
+	height: 0 auto;
+	border-bottom: 2px solid #cccccc;
+}
+.join_title{
+	font-weight: bolder;
+}
+.fa-quote-left{
+	padding: 0px;
+	margin-left: -25px;
+}
+.fa-quote-right{
+	margin-left: 40px;
+	margin-top: -100px;
+	padding: 0px;
+}
+.join_us_image{
+	width: 200px;
+	height: 220px;
+	margin-left: 100px;
+}
+/*Patrick CSS END------------------------------*/
+ @media screen and (max-width: 1400px) {
+     .navbar-brand span {
+      font-size: 20px;
+     }
+
+     .navbar-brand p {
+      font-size: 15px;
+     }
+
+ }
+
+
+
+ @media screen and (max-width: 625px) {
+     
+
+   .navbar-inverse .navbar-nav {
+    clear: both;
+   }
+  .navbar-brand {
+    clear: both;
+  }
+ }
+  
+  @media screen and (max-width: 300px) {
+  body, html { overflow-x:hidden; 
+          
+      }
+      
+       .cycle-pager {
+           display:none;
+       }
+  }
+
+
+
